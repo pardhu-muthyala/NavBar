@@ -1,0 +1,76 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: #3c2078;
+}
+
+.overlay{
+  position:fixed;
+  height: 100%;
+  width: 0;
+  z-index: 1;
+  left:0;
+  top: 0;
+  background-color:#20361c;
+  overflow-x: hidden;
+  transition: 0.8s;
+
+}
+.menu{
+  position:relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+
+
+}
+.menu a{
+  text-decoration: none;
+  display: block;
+  font-size: 3rem;
+  padding: 10px;
+  color:white;
+  transition: all .4s;
+
+}
+.menu a:hover{
+  color:orange;
+  font-weight: bold;
+}
+.overlay .clbtn{
+  position: absolute;
+  border: none;
+  background-color: #20361c;
+  outline:none;
+  top: 30px;
+  right: 40px;
+  font-size:50px;
+  cursor: pointer;
+  color: white;
+
+}
+.opbtn{
+  font-size:5rem;
+  border: 2px solid black;
+  background:#1c2a36;
+  font-weight: 700;
+  color: green;
+  position: absolute;
+  cursor: pointer;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+
+
+}
+.opbtn:hover{
+  color: yellow;
+}
+.clbtn:hover{
+  color: red;
+}

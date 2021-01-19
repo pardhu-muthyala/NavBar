@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/style.css"></link>
+    <title>navbar</title>
+  </head>
+  <body>
+    <div class="overlay" id="navbar">
+      <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+
+      </div>
+      <button class="clbtn" onclick="hide()">&times;</button>
+
+
+    </div>
+    <span class="opbtn" onclick="show()">&#9776;</span>
+    <script>
+    function show() {
+      document.getElementById("navbar").style.width = "100%";
+    }
+    function hide() {
+
+      document.getElementById("navbar").style.width = "0%";
+    }
+
+    </script>
+
+  </body>
+</html>
